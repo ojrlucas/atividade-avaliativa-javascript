@@ -60,6 +60,8 @@ function carregarCadastros() {
 
 function prepararEdicao(index) {
     let cadastros = JSON.parse(localStorage.getItem('cadastros')) || []
+    document.getElementById('cadastro-edicao-Form').style.display = 'block'
+
 
     if (index < 0 || index >= cadastros.length) {
         alert("Erro: Cadastro não encontrado!")
@@ -103,6 +105,7 @@ function editarCadastro(event) {
     alert("Cadastro atualizado com sucesso!");
 
     document.getElementById("cadastro-edicao-Form").reset();
+    document.getElementById('cadastro-edicao-Form').style.display = 'none'
     indiceEdicao = null
 }
 
