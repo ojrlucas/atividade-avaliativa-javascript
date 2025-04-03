@@ -80,6 +80,10 @@
     color: white;
 }
 
+.main-cadastro-edicao {
+    margin-bottom: 100px;
+}
+
 .main-cadastro {
     height: calc(100vh - 60px);
     width: 100%;
