@@ -53,7 +53,7 @@ function carregarCadastros() {
             <td>${c.cidadeUf}</td>
             <td>
                 <button class="btn btn-warning btn-sm" onclick="prepararEdicao(${i})">Editar</button>
-                <button class="btn btn-danger btn-sm" onclick="excluirCadastro(${i})">Excluir</button>
+                <button class="btn btn-warning btn-sm" onclick="excluirCadastro(${i})">Excluir</button>
             </td>
         </tr>`).join('')
 }
